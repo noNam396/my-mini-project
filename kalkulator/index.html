@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<div lang="pl">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Kalkulator</title>
+    </head>
+    <div class="box">
+        <div class="container">
+            <form class="calculator" name="calc">
+                <input type="text" readonly class="value" name="txt">
+                <span class="num ac" onclick="calc.txt.value=''"><i>AC</i></span>
+                <span class="num del"
+                    onclick="calc.txt.value=calc.txt.value.substr(0, calc.txt.value.length - 1)"><i>DEL</i></span>
+                <span class="num slash" onclick="calc.txt.value+='/'"><i>/</i></span>
+                <span class="num multiply" onclick="calc.txt.value+='*'"><i>*</i></span>
+                <span class="num seven" onclick="calc.txt.value +='7'"><i>7</i></span>
+                <span class="num eight" onclick="calc.txt.value+='8'"><i>8</i></span>
+                <span class="num nine" onclick="calc.txt.value+='9'"><i>9</i></span>
+                <span class="num minus" onclick="calc.txt.value+='-'"><i>-</i></span>
+                <span class="num four" onclick="calc.txt.value+='4'"><i>4</i></span>
+                <span class="num five" onclick="calc.txt.value+='5'"><i>5</i></span>
+                <span class="num six" onclick="calc.txt.value+='6'"><i>6</i></span>
+                <span class="num plus" onclick="calc.txt.value+='+'"><i>+</i></span>
+                <span class="num one" onclick="calc.txt.value+='1'"><i>1</i></span>
+                <span class="num two" onclick="calc.txt.value+='2'"><i>2</i></span>
+                <span class="num three" onclick="calc.txt.value+='3'"><i>3</i></span>
+                <span class="num zero" onclick="calc.txt.value+='0'"><i>0</i></span>
+                <span class="num" onclick="calc.txt.value+='00'"><i>00</i></span>
+                <span class="num dot" onclick="calc.txt.value+='.'"><i>.</i></span>
+                <span class="num enter" onclick="calc.txt.value=eval(calc.txt.value)"><i>=</i></span>
+            </form>
+        </div>
+        <span class="circle-1"></span>
+        <span class="circle-2"></span>
+    </div>
+    <script src="script.js"></script>
+    </body>
+
+    </html>

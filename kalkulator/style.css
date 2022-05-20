@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    min-width: 300px;
+    min-height: 300px;
+    position: absolute;
+    backdrop-filter: blur(15px);
+    background-color: rgb(255, 255, 255, 0.05);
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 10;
+    overflow: hidden;
+}
+
+.calculator {
+    display: grid;
+    position: relative;
+}
+
+.calculator .value {
+    width: 270px;
+    position: relative;
+    height: 100px;
+    color: white;
+    border: none;
+    outline: none;
+    grid-column: span 4;
+    background-color: transparent;
+    text-align: right;
+    font-size: 35px;
+    padding: 10px;
+}
+
+.calculator .num {
+    position: relative;
+    display: grid;
+    width: 75px;
+    height: 75px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0;
+}
+
+.num i {
+    font-size: 20px;
+    color: white;
+}
+
+.num:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.num:active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.calculator .plus {
+    grid-row: span 2;
+    height: 152px;
+}
+
+
+.circle-1 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, rgb(218, 233, 9), rgb(233, 9, 233));
+    left: -220px;
+    bottom: 120px;
+    z-index: -1;
+}
+
+.circle-2 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(120deg, rgb(9, 233, 20), rgb(23, 20, 219));
+    left: -10px;
+    top: 50px;
+    z-index: -1;
+}
