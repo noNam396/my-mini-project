@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="filtrowanie.css">
+    <title>Filtrowanie produktów</title>
+</head>
+
+<body onload="filterItems('Wszystko')">
+    <div class="container">
+        <div class="search-container">
+            <input type="search" placeholder="Wpisz nazwę produktu..." id="search-input">
+            <button id="search-btn" onclick="filterItems('Wszystko')">Szukaj</button>
+        </div>
+        <div id="buttons">
+            <button class="button" onclick="filterItems('Wszystko')">Wszystko</button>
+            <button class="button" onclick="filterItems('Buty')">Buty</button>
+            <button class="button" onclick="filterItems('Bluzy')">Bluzy</button>
+            <button class="button" onclick="filterItems('Spodnie')">Spodnie</button>
+            <button class="button" onclick="filterItems('Zegarki')">Zegarki</button>
+        </div>
+        <div id="products"></div>
+    </div>
+    <script src="filtrowanie.js"></script>
+</body>
+
+</html>
